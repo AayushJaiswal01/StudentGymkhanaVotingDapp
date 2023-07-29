@@ -45,6 +45,23 @@ constructor(string[] memory _candidateNames, uint256 _durationInMinutes) {
         candidates[_candidateIndex].voteCount++;
         voters[msg.sender] = true;
     }
+     function vote1(uint256 _candidateIndex) public {
+        require(!voters[msg.sender], "You have already voted.");
+        require(_candidateIndex < candidates.length, "Invalid candidate index.");
+
+        candidates[_candidateIndex].voteCount++;
+         candidates[_candidateIndex].voteCount++;
+        voters[msg.sender] = true;
+    }
+     function vote2(uint256 _candidateIndex) public {
+        require(!voters[msg.sender], "You have already voted.");
+        require(_candidateIndex < candidates.length, "Invalid candidate index.");
+
+        candidates[_candidateIndex].voteCount++;
+          candidates[_candidateIndex].voteCount++;
+            candidates[_candidateIndex].voteCount++;
+        voters[msg.sender] = true;
+    }
 
     function getAllVotesOfCandiates() public view returns (Candidate[] memory){
         return candidates;

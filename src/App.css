@@ -1,12 +1,18 @@
+body {
+  background-color: #3f2e3e;
+  color: #efe1d1;
+}
 .login-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #f1f1f1;
 }
-
+.img-iit {
+  width: 200px;
+  height: 200px;
+}
 .welcome-message {
   font-size: 2rem;
   text-align: center;
@@ -14,7 +20,7 @@
 }
 
 .login-button {
-  background-color: #007bff;
+  background-color: #a78295;
   color: #fff;
   font-size: 1.2rem;
   border: none;
@@ -28,14 +34,13 @@
   background-color: #0069d9;
 }
 
-
 .connected-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #f1f1f1;
+  background-color: #3f2e3e;
 }
 
 .connected-header {
@@ -71,24 +76,24 @@
   text-align: center;
 }
 
-
 .candidates-table {
   border-collapse: collapse;
   width: 50%;
-  text-align:center;
+  text-align: center;
 }
 
-.candidates-table th, .candidates-table td {
+.candidates-table th,
+.candidates-table td {
   padding: 8px;
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
 
 .candidates-table th {
-  background-color: #f2f2f2;
+  background-color: #3f2e3e;
 }
 
-input[type=number] {
+input[type="number"] {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -96,4 +101,3 @@ input[type=number] {
   font-size: 16px;
   margin-bottom: 10px;
 }
-
